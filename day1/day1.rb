@@ -1,2 +1,2 @@
-f = File.read('frequencys.txt').map(&:to_i)
-p f.inject(0, &:+)
+f = File.readlines('frequencys.txt').map(&:to_i)
+p f.sum
